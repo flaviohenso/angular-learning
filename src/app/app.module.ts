@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { BemVindoComponent } from './bem-vindo/bem-vindo.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { VariableReferenciComponent } from './variable-referenci/variable-referenci.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     BemVindoComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    VariableReferenciComponent
   ],
   imports: [
     BrowserModule

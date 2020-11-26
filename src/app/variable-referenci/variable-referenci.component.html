@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="alert alert-success" role="alert">
+      <strong>Bem vindo! Funcionário: {{nome}}</strong>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" #nomeInput>
+        <small id="nomeHelp" class="form-text text-muted">Informe o nome de usuário</small>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="adicionar(nomeInput.value)">Enviar</button>
+    </form>
+  </div>
