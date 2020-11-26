@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="alert alert-success" role="alert">
+    <strong>Bem vindo! Funcionário: {{nome}}</strong>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" (input)="alterarNome($event)">
+      <small id="nomeHelp" class="form-text text-muted">Informe o nome de usuário</small>
+    </div>
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input type="password" class="form-control" id="password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="check1">
+      <label class="form-check-label" for="check1">Lembrar senha</label>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="adicionar()">Enviar</button>
+  </form>
+</div>
