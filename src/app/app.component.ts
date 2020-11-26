@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'meuprojeto';
   idade = 10;
 
+  parentItem = this.idade;
+
   getidade(){
     return 10 + 30;
   }

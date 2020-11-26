@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-variable-referenci',
@@ -7,10 +7,19 @@ import { Component } from '@angular/core';
 })
 export class VariableReferenciComponent {
 
-  nome = "Flavio H. S. Cabral"
+  nome = "flavio henrique";
+  ativo = false;
+
+  @Input() childItem: string;
 
   adicionar(nomeInput: any){
     console.log(`nome: ${nomeInput}`)
+    console.log(this.childItem);
     this.nome = nomeInput;
+  }
+
+  alterarNome(event){
+    console.log(event.target.value);
+    this.nome = event.target.value
   }
 }

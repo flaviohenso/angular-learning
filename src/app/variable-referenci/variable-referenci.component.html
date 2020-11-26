@@ -5,9 +5,10 @@
     <form>
       <div class="form-group">
         <label for="nome">Nome</label>
-        <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" #nomeInput>
+        <!-- event binding input-->
+        <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" #nomeInput (input)="alterarNome($event)" [value]="nome">
         <small id="nomeHelp" class="form-text text-muted">Informe o nome de usuário</small>
       </div>
-      <button type="submit" class="btn btn-primary" (click)="adicionar(nomeInput.value)">Enviar</button>
+      <button type="button" class="btn btn-primary" (click)="adicionar(nomeInput.value)" [disabled]="nome.length == 0">Enviar</button>
     </form>
   </div>
