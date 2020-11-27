@@ -11,9 +11,16 @@ import { Component, Input } from '@angular/core';
     }
   `]
 })
-export class FuncionarioCardComponent{
+export class FuncionarioCardComponent {
 
-  @Input() indice: any;  
+  @Input() indice: any;
   @Input() funcionario: any;
 
+  getEstilosCartao = () => { 
+    return { 
+      backgroundColor: this.indice % 2 === 0 ? 'lightblue' : 'lightgreen',
+      borderWidth: this.indice+'px'
+    }
+  }
+  
 }
