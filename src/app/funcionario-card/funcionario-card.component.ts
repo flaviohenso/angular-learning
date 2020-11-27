@@ -22,5 +22,13 @@ export class FuncionarioCardComponent {
       borderWidth: this.indice+'px'
     }
   }
+
+  getStyleClass = () => { 
+    return ['badge', 'badge-secondary']
+  }
+
+  isAdmin = () => {
+    return this.funcionario.nome.startsWith('F');
+  }
   
 }
