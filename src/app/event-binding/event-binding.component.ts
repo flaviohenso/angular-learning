@@ -6,17 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent{
-  nome = "Flavio H. S. Cabral"
+  nome = 'Flavio H. S. Cabral';
 
-  adicionar(){
-    console.log(`Adicinando ${this.nome}`)
+  adicionar = () => {
+    console.log(`Adicinando ${this.nome}`);
 
     const numero = Math.round(Math.random() * 100);
-    this.nome = 'Clique -> ' + numero
+    this.nome = 'Clique -> ' + numero;
   }
 
-  alterarNome(event){
-    //console.log(event.target.value);
+  alterarNome = (event: any) => {
+    // console.log(event.target.value);
     this.nome = event.target.value
   }
 }

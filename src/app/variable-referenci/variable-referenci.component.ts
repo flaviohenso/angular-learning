@@ -7,19 +7,19 @@ import { Component, Input } from '@angular/core';
 })
 export class VariableReferenciComponent {
 
-  nome = "flavio henrique";
+  nome = 'flavio henrique';
   ativo = false;
 
   @Input() childItem: string;
 
-  adicionar(nomeInput: any){
-    console.log(`nome: ${nomeInput}`)
+  adicionar = (nomeInput: any) => {
+    console.log(`nome: ${nomeInput}`);
     console.log(this.childItem);
     this.nome = nomeInput;
   }
 
-  alterarNome(event){
+  alterarNome = (event: any) => {
     console.log(event.target.value);
-    this.nome = event.target.value
+    this.nome = event.target.value;
   }
 }

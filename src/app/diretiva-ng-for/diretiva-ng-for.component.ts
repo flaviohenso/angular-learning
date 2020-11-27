@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DiretivaNgForComponent {
   funcionarios = [];
-  
-  addFuncionario(newFuncionario){
-    this.funcionarios.push(newFuncionario)
+  addFuncionario = (newFuncionario: string) => {
+    this.funcionarios.push(newFuncionario);
   }
 }

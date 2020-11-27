@@ -7,16 +7,16 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class FuncionarioFormComponent {
 
-  //Defini que é um evento de sáida para o componente pai
+  // Defini que é um evento de sáida para o componente pai
   @Output() funcionarios = new EventEmitter();
-  ultimo: number = 0;
+  ultimo = 0;
 
-  nome = "";
+  nome = '';
   adicionado = false;
 
-  //esse método é ultilizado pelo componente para dispara o evento de saida dos dados
-  adicionar() {
-    //console.log(this.nome);
+  // esse método é ultilizado pelo componente para dispara o evento de saida dos dados
+  adicionar = () => {
+    // console.log(this.nome);
     this.adicionado = true;
 
     const funcionario = {

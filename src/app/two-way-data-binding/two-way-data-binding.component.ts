@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./two-way-data-binding.component.css']
 })
 export class TwoWayDataBindingComponent {
-  nome = "flavio henrique";
+  nome = 'flavio henrique';
   ativo = false;
 
-  adicionar() {
+  adicionar = () => {
     console.log(this.nome);
-    this.nome = `O nome foi alterado`
+    this.nome = `O nome foi alterado`;
   }
 }

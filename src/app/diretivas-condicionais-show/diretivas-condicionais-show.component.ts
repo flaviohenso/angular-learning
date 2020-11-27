@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./diretivas-condicionais-show.component.css']
 })
 export class DiretivasCondicionaisShowComponent {
-  nome = "flavio henrique";
+  nome = 'flavio henrique';
   adicionado = false;
 
-  adicionar() {
+  adicionar = () => {
     console.log(this.nome);
     this.adicionado = true;
   }
