@@ -12,6 +12,7 @@ import { DiretivasCondicionaisShowComponent } from './diretivas-condicionais-sho
 import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
 import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
 import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.co
     DiretivasCondicionaisShowComponent,
     DiretivaNgForComponent,
     FuncionarioCardComponent,
-    FuncionarioFormComponent
+    FuncionarioFormComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
