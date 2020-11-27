@@ -1,0 +1,14 @@
+<div class="alert alert-success" role="alert" *ngIf="adicionado">
+    <strong>Funcionário adicionado: {{nome}}</strong>
+</div>
+<form>
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <!-- event binding input-->
+        <input type="text" class="form-control" id="inputnome" name="inputnome" aria-describedby="nomeHelp"
+            [(ngModel)]="nome" (focus)="adicionado=false">
+        <small id="nomeHelp" class="form-text text-muted">Informe o nome de usuário</small>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="adicionar()"
+        [disabled]="nome.length == 0">Enviar</button>
+</form>

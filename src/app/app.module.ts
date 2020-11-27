@@ -10,6 +10,8 @@ import { VariableReferenciComponent } from './variable-referenci/variable-refere
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { DiretivasCondicionaisShowComponent } from './diretivas-condicionais-show/diretivas-condicionais-show.component';
 import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
+import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
+import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.compon
     VariableReferenciComponent,
     TwoWayDataBindingComponent,
     DiretivasCondicionaisShowComponent,
-    DiretivaNgForComponent
+    DiretivaNgForComponent,
+    FuncionarioCardComponent,
+    FuncionarioFormComponent
   ],
   imports: [
     BrowserModule,
