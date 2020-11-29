@@ -13,6 +13,7 @@ import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.compon
 import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
 import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     DiretivaNgForComponent,
     FuncionarioCardComponent,
     FuncionarioFormComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,

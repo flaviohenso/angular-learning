@@ -18,7 +18,6 @@ import { CategoriaService } from './../services/categoria.service';
 export class HelloComponent {
      nome = 'Flavio';
      cursos;
-
      constructor(categoriaServie: CategoriaService){
         this.cursos = categoriaServie.getCursos();
      }

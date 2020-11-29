@@ -1,0 +1,43 @@
+<section>
+<!--   <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String rendenrizada com interploção: {{ url }}</p>
+  </article>
+  <article>
+    <h3>Com interpolaçãoProperty Binding</h3>
+    <img src="{{ urlimage }}" alt="">
+    <h3>Com Property Binding</h3>
+    <img [src]="urlimage" alt="">
+  </article> -->
+
+  <article>
+    <div>
+      selecione uma classe
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-danger">danger</option>
+      </select>
+      <br>
+      <br>
+    </div>
+
+    <!-- property binding de classe -->
+    <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+    <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
+    <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Warning</div>
+    <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Danger</div>
+
+    <!-- interporlação -->
+    <div class="alert {{ classe.value }}">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita deserunt delectus quod tempore laboriosam beatae distinctio quo eveniet hic saepe sequi deleniti, quia quibusdam non, amet eius recusandae pariatur?
+    </div>
+
+    <!-- property binding de style -->
+    <div class="alert alert-danger" [style.display]="classe.value === 'alert-danger' ? 'block' : 'none'">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita deserunt delectus quod tempore laboriosam beatae distinctio quo eveniet hic saepe sequi deleniti, quia quibusdam non, amet eius recusandae pariatur?
+    </div>
+  </article>
+
+</section>
